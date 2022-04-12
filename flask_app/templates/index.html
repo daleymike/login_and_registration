@@ -19,7 +19,7 @@
                     {% with messages = get_flashed_messages(category_filter='messages') %}
                         {% if messages %}
                             {% for message in messages %}
-                            <h4 class="text-danger">{{message}}</h4>
+                            <h5 class="text-danger">&#8594;{{message}}</h5>
                             {% endfor %}
                         {% endif %}
                     {% endwith %}
@@ -60,7 +60,7 @@
                     {% with errors = get_flashed_messages(category_filter=['errors']) %}
                         {% if errors %}
                             {% for msg in errors %}
-                            <h4 class="text-danger">{{msg}}</h4>
+                            <h5 class="text-danger">{{msg}}</h5>
                             {% endfor %}
                         {% endif %}
                     {% endwith %}
